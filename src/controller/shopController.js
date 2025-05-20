@@ -1,6 +1,5 @@
 import Shop from '../model/shopModel.js';
 
-// Create a new shop item
 const createShopItem = async (req, res) => {
     try {
         const { name, category, description, price, stock, color, size } = req.body;
@@ -24,7 +23,6 @@ const createShopItem = async (req, res) => {
     }
 };
 
-// Get all shop items
 const getShopItems = async (req, res) => {
     try {
         const shopItems = await Shop.find();
